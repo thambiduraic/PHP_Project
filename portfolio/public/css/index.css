@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", serif;
+}
+
+/* common style */
+.text-Light-Green {
+    color: #80DB66;
+}
+
+.bg-light-green {
+    background-color: #80DB66;
+}
+
+/* header and banner wrap background image */
+
+.wrap {
+    background-image: url("../images/slider-bg.jpg");
+}
+
+/* header style */
+
+.active {
+    color: #80DB66 !important;
+}
+
+.bg-img {
+    background: transparent;
+    border: none;
+}
+
+.main-brand {
+    width: 40%;
+}
+
+.download-cv-btn {
+    border: 1px solid #80DB66;
+}
+
+.download-cv-btn:hover {
+    background-color: #80DB66;
+    color: #ffffff;
+}
+
+/* Remove default background image */
+.navbar-toggler-icon {
+    background: none; /* Remove the default icon background */
+    position: relative; /* Position the custom lines */
+    width: 30px; /* Adjust the width of the icon */
+    height: 24px; /* Adjust the height */
+}
+
+/* Create the lines for the hamburger icon */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px; /* Thickness of the lines */
+    background-color: #80DB66; /* Change this to your desired color */
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.3s; /* Smooth transition */
+}
+
+/* Position the lines */
+.navbar-toggler-icon::before {
+    top: 2px; /* First line on top */
+    left: 2px;
+}
+
+.navbar-toggler-icon span {
+    top: 10px; /* Middle line */
+    left: 2px;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 2px; /* Last line on the bottom */
+    left: 2px;
+}
+
+/* Optionally, add a hover effect for the toggler */
+.navbar-toggler:hover .navbar-toggler-icon::before,
+.navbar-toggler:hover .navbar-toggler-icon::after,
+.navbar-toggler:hover .navbar-toggler-icon span {
+    background-color: #007bff; /* Hover color */
+}
+
+.bg-color {
+    background-color: #80DB66;
+}
+
+/* banner style */
+
+#content {
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    min-height: 50px;
+}
+
+.hello {
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.name-style {
+    font-size: 100px;
+}
+
+.icon {
+    width: 10%;
+    height: 400px;
+    top: 45%;
+    right: -20%;
+}
+
+.icon ul {
+    position: absolute;
+    top: 20%;
+}
+
+.icon li {
+    border: 1px solid rgb(204, 211, 217, 0.2);
+    text-align: center;
+    width: 55px;
+    line-height: 52px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+.icon svg {
+    fill: #ffffff;
+    width: 25px;
+}
+
+.icon .youtube-icon {
+    width: 20px;
+}
+
+.icon .facebook-icon {
+    width: 30px;
+}
+
+.person::before {
+    position: absolute;
+    content: '';
+    background-color: rgba(59, 60, 70, 0.527);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    top: 8%;
+    right: -14%;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width : 1024px) {
+    .main-brand {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .main-brand {
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width : 426px) {
+    .main-brand {
+        width: 40%;
+    }
+}
