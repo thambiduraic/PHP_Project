@@ -1,13 +1,16 @@
 <section class="container">
     <div class="row">
-        <div class="col-12 col-lg-6 position-relative my-auto">
+        <div class="col-12 col-lg-6 position-relative my-auto mb-xl-5">
             <h1 class="text-white name-style text-center text-lg-start">
                 <span class="hello fw-medium fs-4 d-block w-100 my-3 text-Light-Green text-center text-sm-start d-flex justify-content-center justify-content-lg-start">HELLO I'M</span>
                 Thambi Durai
             </h1>
             <p class="fw-normal fs-4 my-4 text-white text-center text-lg-start">A Passionate <span id="content" class="text-Light-Green fs-3"></span></p>
             <div class="d-flex justify-content-center justify-content-lg-start">
-                <button class="btn text-white bg-light-green px-4 px-sm-5 py-2 py-sm-3 fs-sm-5 fw-semibold my-3 mb-5 mb-md-4 text-uppercase text-center text-lg-start">Say Hello</button>
+                <button class="btn text-white bg-light-green px-4 px-sm-5 py-2 py-sm-3 fs-sm-5 fw-semibold my-3 mb-5 mb-md-4 mb-xl-5 text-uppercase text-center text-lg-start">Say Hello</button>
+            </div>
+            <div class="single-star position-absolute d-none d-lg-block">
+                <img class="w-100" src="{{ asset('images/shape3.png') }}" alt="spring">
             </div>
             <div class="icon">
                 <ul class="position-absolute">
@@ -51,6 +54,15 @@
         </div>
         <div class="col-12 col-lg-6">
             <div class="position-relative mx-auto person-div">
+                <div class="king position-absolute d-none d-lg-block">
+                    <img class="w-25" src="{{ asset('images/shape4.png') }}" alt="king">
+                </div>
+                <div class="star position-absolute end-0 d-none d-lg-block">
+                    <img class="w-75" src="{{ asset('images/shape1.png') }}" alt="star">
+                </div>
+                <div class="spring position-absolute d-none d-lg-block">
+                    <img class="w-75" src="{{ asset('images/shape2.png') }}" alt="spring">
+                </div>
                 <div class="person position-sm-absolute w-100 mx-auto d-flex justify-content-center">
                     <img class="img-fluid ms-5 ms-lg-3 person-img z-2 position-sm-absolute" src="{{ asset('images/person.png') }}" alt="person">
                 </div>

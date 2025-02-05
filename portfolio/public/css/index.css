@@ -164,20 +164,44 @@
     z-index: 1;
 }
 
+.king {
+    width: 32%;
+    left: -10%;
+}
+
+.spring {
+    bottom: 22%;
+    right: 11%;
+}
+
+.single-star {
+    left: 0%;
+    bottom: -5%;
+}
+
 @media only screen and (max-width : 1440px) {
     .icon ul {
-        right: -100%;
+        right: -105%;
         top: 2%;
     }
 
     .person::before {
-        top: 14%;
-        right: 15%;
+        top: 8%;
+        right: 10%;
     }
 
     .person-img {
-        margin-top: 5%;
-        width: 75%;
+        margin-top: -5%;
+        width: 80%;
+    }
+
+    .spring {
+        bottom: 26%;
+        right: 17%;
+    }
+
+    .single-star {
+        bottom: -5%;
     }
 }
 
@@ -206,6 +230,11 @@
         height: 450px;
         top: 10%;
         right: 10%;
+    }
+
+    .spring {
+        bottom: 30%;
+        right: 14%;
     }
 
 }
