@@ -38,7 +38,7 @@
             <div class="ms-auto me-lg-0" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-sm-4 me-lg-0">
                     <li class="nav-item download-cv-btn rounded px-3">
-                        <a class="nav-link active border-style rounded px-2 text-white fw-bold" aria-current="page" href="#">Download CV</a>
+                        <a class="nav-link border-style rounded px-2 text-white fw-bold" aria-current="page" href="#">Download CV</a>
                     </li>
                 </ul>
             </div>

@@ -95,6 +95,11 @@
 
 /* banner style */
 
+.person-img {
+    position: sticky;
+    margin-top: 20%;
+}
+
 #content {
     font-weight: 500;
     text-align: center;
@@ -104,8 +109,7 @@
 }
 
 .hello {
-    letter-spacing: 2px;
-    font-size: 24px;
+    letter-spacing: 6px;
 }
 
 .name-style {
@@ -114,14 +118,11 @@
 
 .icon {
     width: 10%;
-    height: 400px;
-    top: 45%;
-    right: -20%;
 }
 
 .icon ul {
-    position: absolute;
-    top: 20%;
+    top: 22%;
+    right: 0;
 }
 
 .icon li {
@@ -147,6 +148,10 @@
     width: 30px;
 }
 
+.person-div {
+    width: 100%;
+}
+
 .person::before {
     position: absolute;
     content: '';
@@ -159,21 +164,99 @@
     z-index: 1;
 }
 
+@media only screen and (max-width : 1440px) {
+    .icon ul {
+        right: -100%;
+        top: 2%;
+    }
+
+    .person::before {
+        top: 14%;
+        right: 15%;
+    }
+
+    .person-img {
+        margin-top: 5%;
+        width: 75%;
+    }
+}
+
 
 @media only screen and (max-width : 1024px) {
     .main-brand {
         width: 15%;
     }
+
+    .person-div {
+        width: 100%;
+    }
+
+    .person-img {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .icon ul {
+        right: -100%;
+        z-index: 2;
+    }
+
+    .person::before {
+        width: 450px;
+        height: 450px;
+        top: 10%;
+        right: 10%;
+    }
+
 }
 
 @media only screen and (max-width : 768px) {
     .main-brand {
         width: 22%;
     }
+
+    .person::before {
+        right: 10%;
+        width: 450px;
+        height: 450px;
+    }
+
+    .person-img {
+        width: 75%;
+    }
+
+    .icon ul {
+        right: -2%;
+        z-index: 2;
+        top: 50%;
+    }
+
+    .person-div {
+        width: 75%;
+    }
 }
 
 @media only screen and (max-width : 426px) {
     .main-brand {
         width: 40%;
+    }
+
+    .person::before {
+        width: 300px;
+        height: 300px;
+        top: 0%;
+        right: -5%;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .name-style {
+        font-size: 50px;
+    }
+
+    .person-div {
+        width: 75%;
     }
 }
